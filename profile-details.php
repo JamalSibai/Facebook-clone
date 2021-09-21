@@ -38,7 +38,7 @@ $row = $result ->fetch_assoc();
   <!-- Basic Page Needs
   ================================================== -->
   <meta charset="utf-8">
-  <title>Aviato | E-commerce template</title>
+  <title>Facebook</title>
 
   <!-- Mobile Specific Metas
   ================================================== -->

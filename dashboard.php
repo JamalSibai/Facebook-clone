@@ -24,7 +24,7 @@ $result = $stmt->get_result();
   <!-- Basic Page Needs
   ================================================== -->
   
-  <title>Aviato </title>
+  <title>Facebook</title>
 
   <!-- Mobile Specific Metas
   ================================================== -->
