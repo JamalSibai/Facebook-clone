@@ -93,10 +93,10 @@ $row = $result ->fetch_assoc();
     <div class="row">
       <div class="col-md-12">
         <ul class="list-inline dashboard-menu text-center">
-			<li><a href="dashboard.php">Dashboard</a></li>
+			<li><a href="profile-details.php" class="active">Profile Details</a></li>
+			<li><a href="dashboard.php">Find Friends</a></li>
 			<li><a href="notifications.php" >Notifications</a></li>
 			<li><a href="friends.php">Friends</a></li>
-			<li><a href="profile-details.php" class="active">Profile Details</a></li>
 			<li><a href="php/logout.php">logout</a></li>
         </ul>
         <div class="dashboard-wrapper dashboard-user-profile">

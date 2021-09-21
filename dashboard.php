@@ -85,10 +85,10 @@ $result = $stmt->get_result();
 		<div class="row">
 			<div class="col-md-12">
 				<ul class="list-inline dashboard-menu text-center">
-					<li><a class="active" href="dashboard.html">Add Friends</a></li>
-					<li><a href="notifications.php">Notifications</a></li>
-					<li><a href="friends.php">Friends</a></li>
-					<li><a href="profile-details.php">Profile Details</a></li>
+					<li><a href="profile-details.php" >Profile Details</a></li>
+					<li><a href="dashboard.php"class="active">Find Friends</a></li>
+					<li><a href="notifications.php" >Notifications</a></li>
+					<li><a href="friends.php" >Friends</a></li>
 					<li><a href="php/logout.php">logout</a></li>
 				</ul>
 				<div class="dashboard-wrapper user-dashboard">
@@ -107,7 +107,7 @@ $result = $stmt->get_result();
 
 					<div class="total-order mt-20">
 						<h4>Total Orders</h4>
-						<div class="table-responsive" id="live_data">
+						<div class="container" id="live_data">
 							
 							<H1 class="form-group">Add  A friend</H1>
 						</div>

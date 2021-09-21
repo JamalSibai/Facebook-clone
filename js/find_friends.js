@@ -28,13 +28,15 @@ $(document).ready(function(){
     function findFriends(){
         findFriendsAPI().then(results=>{
             var output = '';
-            output +=' <div class="table-responsive">  <table class="table table-bordered"> <tr>   <th width="10%">Id</th>   <th width="40%">name</th> <th width="40%">phone</th> <th width="40%">gender</th> <th width="10%">Option</th> '
+            output +=' <div class="row">';
             $.each(results,function(key, value){
-                output += '<tr> <td class="id_search" data-id1="'+value.id+'" contenteditable id = "id_search" >'+value.id+'</td> <td type = "text" class="name" data-id2="'+value.name+'" contenteditable id = "name">'+value.name+'</td> <td  class="phone_search" data-id3="'+value.phone+'" contenteditable id = "phone_search" >'+value.phone+'</td> <td class="gender_search" data-id4="'+value.gender+'" contenteditable id = "gender_search">'+value.gender+'</td> <td><button type="button" name = "'+value.name+'" id="'+value.id+'" class="btn btn-xs  btn-info btn_add_friend">add friend</button></td>  </tr>'        
+                output += '<div class="col-md-4"><div> <div class="product-thumb "  style="margin: auto;width: 60%;" > <img style="border-radius: 50%; " alt="Avatar" class="img-responsive" src="images/team/team-1.jpg"  /> </div> <div class="product-content " style="text-align:center"><h4>'+value.name+'</h4><p>'+value.gender+'</p> <button style="text-align:center" class="btn btn-main btn-large btn-round-full  btn_add_friend" id="'+value.id+'" style="text-align:center">add friend</button> </div></div></div>'
+                //testing table
+                // output += '<tr> <td class="id_search" data-id1="'+value.id+'" contenteditable id = "id_search" >'+value.id+'</td> <td type = "text" class="name" data-id2="'+value.name+'" contenteditable id = "name">'+value.name+'</td> <td  class="phone_search" data-id3="'+value.phone+'" contenteditable id = "phone_search" >'+value.phone+'</td> <td class="gender_search" data-id4="'+value.gender+'" contenteditable id = "gender_search">'+value.gender+'</td> <td><button type="button" name = "'+value.name+'" id="'+value.id+'" class="btn btn-xs  btn-info btn_add_friend">add friend</button></td>  </tr>'        
                 
                 
             })
-            output += '</table></div>';
+            output += '</div>';
             $('#live_data').html(output);
             console.log("run")
     })

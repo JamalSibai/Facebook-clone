@@ -78,14 +78,14 @@ if(!$_SESSION["id"]){
     <div class="row">
       <div class="col-md-12">
         <ul class="list-inline dashboard-menu text-center">
-			<li><a href="dashboard.php">Dashboard</a></li>
+			<li><a href="profile-details.php" >Profile Details</a></li>
+			<li><a href="dashboard.php">Find Friends</a></li>
 			<li><a href="notifications.php" >Notifications</a></li>
 			<li><a href="friends.php" class="active">Friends</a></li>
-			<li><a href="profile-details.php">Profile Details</a></li>
 			<li><a href="php/logout.php">logout</a></li>
         </ul>
         <div class="dashboard-wrapper user-dashboard">
-          <div class="table-responsive" id="live_data" >
+          <div class="container" id="live_data" >
             <table class="table">
               	<thead>
 					<tr>
